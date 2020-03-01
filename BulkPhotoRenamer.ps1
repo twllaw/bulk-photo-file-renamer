@@ -61,7 +61,7 @@ foreach ($folder in $folders)
 		
 		Write-Host "Current folder: $folder`n"
 		$folderPathIncFiles = $folder + "\*"
-		$photoFiles = Get-ChildItem $folderPathIncFiles -Include "*.jpg"
+		$photoFiles = Get-ChildItem $folderPathIncFiles -Include "*.jpg", "*.mov"
 		
 		foreach ($photoPath in $photoFiles)
 		{
